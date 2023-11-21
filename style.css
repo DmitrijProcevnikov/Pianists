@@ -1,0 +1,13 @@
+html {
+  background-color: rgb(226, 247, 247);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+#hero {
+  border-radius: 50%;
+  width: 90vw;
+}
