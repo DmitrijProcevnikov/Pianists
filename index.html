@@ -9,18 +9,29 @@
       href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Pianists</title>
   </head>
   <body>
     <header>
-      <img src="hero.JPG" alt="foto" id="hero" />
+      <a href="/index.html"><img src="hero.JPG" alt="foto" id="hero" /></a>
     </header>
     <main>
-      <button class="main_button">Аранжировки</button>
-      <button class="main_button">Записаться на урок</button>
-      <button class="main_button">Набор нот</button>
-      <button class="main_button">Сборники</button>
+      <a href="/arrangements.html">
+        <button class="main_button" id="main_button_1">Аранжировки</button>
+      </a>
+      <a href="/enroll.html"
+        ><button class="main_button" id="main_button_2">
+          Записаться на урок
+        </button></a
+      >
+      <a href="/transcribe.html"
+        ><button class="main_button" id="main_button_3">Набор нот</button></a
+      >
+      <a href="/collections.html">
+        <button class="main_button" id="main_button_4">Сборники</button>
+      </a>
     </main>
   </body>
 </html>
