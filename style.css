@@ -1,6 +1,9 @@
 html {
-  background-color: rgb(226, 247, 247);
-  font-size: 20px;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(219, 223, 235),
+    rgb(234, 236, 248)
+  );
 }
 
 header {
@@ -17,8 +20,8 @@ main {
 }
 
 #hero {
-  border-radius: 50%;
-  width: 90vw;
+  border-radius: 20px;
+  width: calc(30vw + 30vh);
 }
 
 button {
