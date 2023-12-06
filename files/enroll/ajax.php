@@ -1,8 +1,8 @@
 <?php
 // Токен телеграм бота
-$tg_bot_token = TOKEN_TELEGRAM;
+$tg_bot_token = ${{ secrets.TOKEN_TELEGRAM }};
 // ID Чата
-$chat_id = CHAT_ID;
+$chat_id = ${{ secrets.CHAT_ID }};
 
 $text = '';
 
