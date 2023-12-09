@@ -15,7 +15,7 @@ function serializeForm(formNode) {
       const value = type === "checkbox" ? element.checked : element.value;
 
       data.append(name, value);
-      text += `[${name}: -- ${value}] \n`;
+      text += `${name}: -- ${value} %0A`;
     });
   console.log(text);
   fetch(
