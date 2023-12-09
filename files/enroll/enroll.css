@@ -1,4 +1,4 @@
-.form {
+form {
   background-color: #fff;
   border-radius: 5px;
   padding: 40px;
@@ -6,22 +6,33 @@
   flex-direction: column;
 }
 
-.form h2 {
+.log-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
   font-size: 20px;
   color: #111;
   margin-bottom: 20px;
 }
 
-.form .input {
-  border: 1px solid #d17224;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
+label {
+  display: flex;
+  flex-direction: column;
 }
 
-.form .btn {
+input {
+  border: 1px solid #57514b;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+form button {
   margin-top: 10px;
-  background-color: #d17224;
+  background-color: #6f88e4;
   padding: 10px;
   color: #fff;
   border-radius: 5px;

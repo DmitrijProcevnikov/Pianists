@@ -23,33 +23,158 @@
     <main>
       <div class="container">
         <div class="log-form">
-          <h2>Заполните, пожалуйста, форму</h2>
-          <form class="telegram-form">
-            <input
-              type="text"
-              name="name"
-              placeholder="Имя"
-              autocomplete="off"
-            />
-            <input
-              type="text"
-              name="phone"
-              placeholder="Телефон"
-              autocomplete="off"
-            />
-            <input
-              type="text"
-              name="email"
-              placeholder="Email"
-              autocomplete="off"
-            />
-            <textarea name="text"></textarea>
-            <button type="submit" class="btn">отправить</button>
+          <h2>Заполните, пожалуйста, заявку</h2>
+
+          <form id="mars-once" action="/apply/" method="POST">
+            <label>
+              Ваше имя:
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Фредерик Шопен"
+                required
+                autofocus
+              />
+            </label>
+
+            <label>
+              Почта:
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="music@gmail.com"
+                required
+              />
+            </label>
+
+            <label>
+              Возраст:
+              <input type="number" name="age" required />
+            </label>
+
+            <label>
+              Есть ли дома инструмент?:
+              <input type="checkbox" name="instrument-presence" value="1" />
+            </label>
+
+            <label>
+              Какой инструмент?:
+              <input
+                type="text"
+                name="musical-instrument"
+                id="musical-instrument"
+                placeholder="Орган"
+                required
+                autofocus
+              />
+            </label>
+
+            <label>
+              Занимались ли раньше?:
+              <input type="checkbox" name="music-experience" value="1" />
+            </label>
+
+            <label>
+              Где обучались?:
+              <input
+                type="text"
+                name="place-of-study"
+                id="place-of-study"
+                placeholder="Берлинская консерватория"
+                required
+                autofocus
+              />
+            </label>
+
+            <label>
+              Сколько по времени занимались?:
+              <input
+                type="text"
+                name="study-time"
+                id="study-time"
+                placeholder="10 лет"
+                required
+                autofocus
+              />
+            </label>
+
+            <label>
+              Цель обучения?:
+              <input
+                type="text"
+                name="the-purpose-of-training"
+                id="the-purpose-of-training"
+                placeholder="Концертные выступления"
+                required
+                autofocus
+              />
+            </label>
+
+            <label>
+              Какие произведения хотите играть?:
+              <input
+                type="text"
+                name="repertoire"
+                id="repertoire"
+                placeholder="Только классику"
+                required
+                autofocus
+              />
+            </label>
+
+            <label>
+              Ваше свободное время?:
+              <input
+                type="text"
+                name="free-time"
+                id="free-time"
+                placeholder="5 часов в день"
+                required
+                autofocus
+              />
+            </label>
+
+            <label>
+              Город проживания:
+              <input
+                type="text"
+                name="location"
+                id="location"
+                placeholder="New York City"
+                required
+                autofocus
+              />
+            </label>
+
+            <label>
+              Уроки онлайн или офлайн?:
+              <input
+                type="text"
+                name="online"
+                id="online"
+                placeholder="Онлайн"
+                required
+                autofocus
+              />
+            </label>
+
+            <!-- <label>
+              Профессия:
+              <select name="specialization" required>
+                <option value="engineer" selected>Инженер</option>
+                <option value="scientist">Учёный</option>
+                <option value="psychologist">Психолог</option>
+                <option value="other">Другая</option>
+              </select>
+            </label> -->
+
+            <button type="submit">Отправить заявку</button>
           </form>
         </div>
       </div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./enroll.js"></script>
+    <script src="fetch.js"></script>
   </body>
 </html>
