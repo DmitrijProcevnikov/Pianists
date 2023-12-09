@@ -1,5 +1,5 @@
-token = "6815622159:AAEi0Xp1753lx2Iz--Kp-7GjJlYWevjodho";
-chat_id = "-1001898298001";
+token = ${{ secrets.TOKEN_TELEGRAM }};
+chat_id = ${{ secrets.CHAT_ID }};
 
 let text = "";
 
