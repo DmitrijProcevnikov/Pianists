@@ -6,6 +6,12 @@ form {
   flex-direction: column;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
 .log-form {
   display: flex;
   flex-direction: column;
@@ -36,4 +42,12 @@ form button {
   padding: 10px;
   color: #fff;
   border-radius: 5px;
+}
+
+.ok-message {
+  display: none;
+}
+
+.err-message {
+  display: none;
 }
