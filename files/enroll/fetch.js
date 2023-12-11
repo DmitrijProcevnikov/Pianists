@@ -1,5 +1,5 @@
-token = `${{ secrets.TOKEN_TELEGRAM }}`;
-chat_id = `${{ secrets.CHAT_ID }}`;
+token = ${{ secrets.TOKEN_TELEGRAM }};
+chat_id = ${{ secrets.CHAT_ID }};
 
 let text = "Привет!";
 
@@ -39,12 +39,12 @@ let text = "Привет!";
 //   return await 
 // }
 fetch(
-    `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&parse_mode=html&text=${text}`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "multipart/form-data" },
-      body: data,
-    }
+    `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&parse_mode=html&text=${text}`
+    // {
+    //   method: "POST",
+    //   headers: { "Content-Type": "multipart/form-data" },
+    //   body: data,
+    // }
   );
 // async function handleFormSubmit(event) {
 //   event.preventDefault();
