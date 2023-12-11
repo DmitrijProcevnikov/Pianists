@@ -1,5 +1,5 @@
-token = ${{ secrets.TOKEN_TELEGRAM }};
-chat_id = ${{ secrets.CHAT_ID }};
+token = `${{ secrets.TOKEN_TELEGRAM }}`;
+chat_id = `${{ secrets.CHAT_ID }}`;
 
 let text = "";
 
@@ -46,13 +46,13 @@ async function sendData(data) {
   );
 }
 
-// async function handleFormSubmit(event) {
-//   event.preventDefault();
-//   const data = serializeForm(event.target);
-//   const { status, error } = await sendData(data);
-//   if (status === 200) {
-//     onSuccess();
-//   } else {
-//     errSuccess();
-//   }
-// }
+async function handleFormSubmit(event) {
+  event.preventDefault();
+  const data = serializeForm(event.target);
+  const { status, error } = await sendData(data);
+  if (status === 200) {
+    onSuccess();
+  } else {
+    errSuccess();
+  }
+}
