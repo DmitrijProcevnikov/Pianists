@@ -46,13 +46,13 @@ async function sendData(data) {
   );
 }
 
-async function handleFormSubmit(event) {
-  event.preventDefault();
-  const data = serializeForm(event.target);
-  const { status, error } = await sendData(data);
-  if (status === 200) {
-    onSuccess();
-  } else {
-    errSuccess();
-  }
-}
+// async function handleFormSubmit(event) {
+//   event.preventDefault();
+//   const data = serializeForm(event.target);
+//   const { status, error } = await sendData(data);
+//   if (status === 200) {
+//     onSuccess();
+//   } else {
+//     errSuccess();
+//   }
+// }
