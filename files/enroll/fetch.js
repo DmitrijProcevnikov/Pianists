@@ -1,8 +1,8 @@
-token = $({ secrets.TOKEN_TELEGRAM });
-chat_id = $({ secrets.CHAT_ID });
+// token = $({ secrets.TOKEN_TELEGRAM });
+// chat_id = $({ secrets.CHAT_ID });
 
 let text = "Привет!";
-
+console.log( ${{ secrets.YOR_2 }}, 2*${{ secrets.YOR_2}}, text);
 // const okMessage = document.querySelector(".ok-message");
 // const errMessage = document.querySelector(".err-message");
 // const logForm = document.querySelector(".log-form");
@@ -38,14 +38,14 @@ let text = "Привет!";
 // async function sendData(data) {
 //   return await 
 // }
-fetch(
-    `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&parse_mode=html&text=${text}`
-    // {
-    //   method: "POST",
-    //   headers: { "Content-Type": "multipart/form-data" },
-    //   body: data,
-    // }
-  );
+// fetch(
+//     `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&parse_mode=html&text=${text}`
+//     // {
+//     //   method: "POST",
+//     //   headers: { "Content-Type": "multipart/form-data" },
+//     //   body: data,
+//     // }
+//   );
 // async function handleFormSubmit(event) {
 //   event.preventDefault();
 //   const data = serializeForm(event.target);
