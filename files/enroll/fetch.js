@@ -2,9 +2,11 @@
 // chat_id = $({ secrets.CHAT_ID });
 
 let text = "Привет!";
-console.log( ${{ secrets.YOR_2 }});
-console.log(2*${{ secrets.YOR_2}});
 console.log(text);
+const YOR = ${{ secrets.YOR_2 }};
+console.log(2*YOR );
+console.log(YOR);
+
 // const okMessage = document.querySelector(".ok-message");
 // const errMessage = document.querySelector(".err-message");
 // const logForm = document.querySelector(".log-form");
