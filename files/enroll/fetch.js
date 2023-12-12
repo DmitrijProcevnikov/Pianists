@@ -1,5 +1,5 @@
-token = ${{ secrets.TOKEN_TELEGRAM }};
-chat_id = ${{ secrets.CHAT_ID }};
+token: ${{ secrets.TOKEN_TELEGRAM }};
+chat_id: ${{ secrets.CHAT_ID }};
 
 let text = "Привет!";
 
