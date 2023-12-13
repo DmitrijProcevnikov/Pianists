@@ -3,9 +3,16 @@
 
 let text = "Привет!";
 console.log(text);
-const YOR = process.env.YOR_2;
-console.log(2*YOR );
-console.log(YOR);
+fetch('/env')
+  .then(response => response.json())
+  .then(data => {
+    // Используйте полученные переменные окружения
+    console.log(data.YOR_2);
+  });
+// const YOR = process.env.YOR_2;
+// console.log(2*YOR );
+// console.log(YOR);
+
 
 // const okMessage = document.querySelector(".ok-message");
 // const errMessage = document.querySelector(".err-message");
