@@ -2,7 +2,6 @@ token = process.env.TOKEN_TELEGRAM;
 chat_id = process.env.CHAT_ID;
 
 let text = "";
-const secret = process.env.GITHUB_SECRET;
 
 const okMessage = document.querySelector(".ok-message");
 const errMessage = document.querySelector(".err-message");
