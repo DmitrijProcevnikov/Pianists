@@ -1,0 +1,3 @@
+env:
+  TOKEN_TELEGRAM: ${{ secrets.TOKEN_TELEGRAM }}
+  CHAT_ID: ${{ secrets.CHAT_ID }}
