@@ -1,3 +1,13 @@
-env:
-  TOKEN_TELEGRAM: ${{ secrets.TOKEN_TELEGRAM }}
-  CHAT_ID: ${{ secrets.CHAT_ID }}
+name: Example Workflow
+
+on: [push]
+
+jobs:
+  example_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message to console
+        run: echo "Hello, world!"
+        env:
+          TOKEN_TELEGRAM: ${{ secrets.TOKEN_TELEGRAM }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}

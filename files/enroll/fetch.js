@@ -1,5 +1,5 @@
-token = process.env.TOKEN_TELEGRAM;
-chat_id = process.env.CHAT_ID;
+const token = process.env.TOKEN_TELEGRAM;
+const chat_id = process.env.CHAT_ID;
 
 let text = "";
 
