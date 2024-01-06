@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const token = process.env.TOKEN_TELEGRAM;
 const chat_id = process.env.CHAT_ID;
 
